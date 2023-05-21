@@ -1,369 +1,371 @@
-# WoTB_Voice_Mod_Creater
-Wwiseの使い方がわからなくても自動でプロジェクトを作成、ビルド、適応をしてくれるソフトです。<br>
-おまけとして戦闘BGMの作成と、謎の音楽プレイヤーを搭載しています。<br>
-操作方法はYoutubeの動画を参照してください<br>
-バグや不具合、わからないことがあればSRTTbacon#2395までご連絡を！<br>
-V1.2.7から.NetFramework4.6.1に変更しましたので、Windows7などはマイクロソフトからダウンロード&インストールする必要があります。<br>
+# WoTB_Voice_Mod_Creator
+It is software that automatically creates, builds, and adapts projects without knowing how to use Wwise. <br>
+As a bonus, it is equipped with battle BGM creation and a mysterious music player. <br>
+Please refer to the Youtube video for how to operate<br>
+Please contact SRTTbacon#2395 if you have any bugs, problems, or anything you don't understand! <br>
+Since I changed from V1.2.7 to .NetFramework4.6.1, Windows 7 etc. need to be downloaded and installed from Microsoft. <br>
 <br>
-ダウンロード:https://drive.google.com/file/d/1LeF1SLOf7FYvUND4GDYn7IvN63BUfg-n/view<br>
-ソース内のWwise_Class/V1とV2の違いは、V1では.pckファイルを扱い、V2では.bnkファイルを扱う感じです。<br>
+Download: https://drive.google.com/file/d/1LeF1SLOf7FYvUND4GDYn7IvN63BUfg-n/view<br>
+The difference between Wwise_Class/V1 and V2 in the source is that V1 handles .pck files and V2 handles .bnk files. <br>
 <br>
 # V1.5.3.7<br>
-・PC版WoTの音声Modを作成できる機能を追加<br>
-・音声Modを作成する際、Wwiseプロジェクトを生成できる機能を追加<br>
+・Added a function that allows you to create voice mods for the PC version of WoT<br>
+Added the ability to generate a Wwise project when creating an audio mod<br>
 <br>
 # V1.5.3<br>
-・WoWS用の音声Modをセーブファイル(*.wvs形式)に変換できる機能を追加<br>
-・音声Mod作成の際、リストに追加している音声をコピー&ペーストできる機能を追加<br>
-・音楽プレイヤーにて、既に追加している曲の名前を変更できる機能を追加<br>
-・ソフトのアップデートを行うことができるコンソールアプリケーションを追加<br>
-・その他細かなバグの修正と仕様変更<br>
+・Added a function that can convert WoWS voice mods to save files (*.wvs format)<br>
+・Added a function that allows you to copy and paste the voices added to the list when creating voice mods<br>
+-Added a function to change the name of already added songs in the music player<br>
+・Added a console application that can update software<br>
+・Other minor bug fixes and specification changes<br>
 <br>
 # V1.5.2<br>
-・WoTBの砲撃音の仕様が変更されたため、それに対応<br>
-・SE設定がおかしくなっていた問題を修正<br>
-・その他一部仕様を変更<br>
+・Corresponds to WoTB's artillery sound specifications that have been changed<br>
+・Fixed an issue where the SE settings were strange<br>
+・Other specifications changed<br>
 <br>
 # V1.5.1<br>
-・音声Mod作成時、SE関連の設定ができなかった問題を修正<br>
-・Wwise Playerにて、砲撃音の.bnkファイルを読み込んだ際、通常時とズーム時を分けて再生できるように変更<br>
-・Wwise Playerにて、特定の動作をするとソフトがクラッシュしてしまう問題を修正<br>
+-Fixed an issue where SE-related settings could not be made when creating a voice mod<br>
+・Changed so that when loading a .bnk file of gunfire sound in Wwise Player, it can be played separately for normal time and zoom time<br>
+- Fixed an issue in Wwise Player where the software would crash when performing certain actions<br>
 <br>
 # V1.5.0<br>
-・音声Modにて、各サウンドまたはイベントにエフェクトや再生時間の設定、確率などを操作できる機能を追加<br>
-・戦闘中に再生されるSEを増加(詳しくはMod Createrで直接見るか、Discordにて)<br>
-・サービス終了に備え、サーバーに接続しないように変更。これに伴い、以下の制限が課されます<br>
----WoTB用ツールV1の一部機能の削除<br>
----音楽プレイヤー内のボーカルと楽器に切り分けを削除(ローカルでダウンロード&実行する場合は機能します)<br>
----Modの配布ができないように変更(ダウンロードは可能です)<br>
----その他アップデートの確認、メッセージ、チャットなどの直接サーバーとやり取りする機能の削除<br>
-・音楽プレイヤーにて、Youtubeから取得した際MP3ファイルにサムネイル画像4つを埋め込むように変更。また、再生時間に応じて画像を変更しながら表示させる機能を追加(1分以上の曲のみ)<br>
-・英語バージョンを追加(ただGoogle翻訳に手を加えただけ)<br>
-・音声Modにて、サウンドも含めたセーブファイルに関する重大なバグを修正<br>
-・その他細かなバグの修正と仕様変更<br>
+-Added a function that allows you to operate effects, playback time settings, probability, etc. for each sound or event in the sound mod<br>
+・Increase the SE that is played during battle (see directly on the Mod Creator or on Discord for details)<br>
+- Changed not to connect to the server in preparation for service termination. This entails the following restrictions<br>
+--- Removal of some features of Tools V1 for WoTB<br>
+--- Removed splitting between vocals and instruments in music player (works when downloaded & run locally)<br>
+--- Changed to prevent distribution of mods (download is possible)<br>
+--- Deletion of other functions that interact directly with the server, such as checking for updates, messaging, and chat<br>
+- Changed the music player to embed 4 thumbnail images in the MP3 file when obtained from Youtube. Also added a function to change the image according to the playback time (only for songs longer than 1 minute)<br>
+・Added English version (just modified Google translation)<br>
+-Fixed a serious bug related to save files including sounds in the sound mod<br>
+・Other minor bug fixes and specification changes<br>
 <br>
 # V1.4.9.8<br>
-・音声制作にて、SEを無効にしても勝手に追加されてしまう問題を修正<br>
-・"BlitzからWoT"にて、.bnkファイルを追加したときに自動でSEが削除されるように変更<br>
-・"BlitzからWoT"にて、音声を無効にした項目の色が変更されるように修正<br>
-・音楽プレイヤーにて、音ズレが訪れてしまう場合がある問題を修正(?)<br>
-・ソフト内から正常にアップデートできない問題を修正(多分)<br>
-・音声Modにて、履帯復旧のイベントが再生されない問題を修正(申し訳ないです...)<br>
-・その他細かな仕様変更<br>
+-Fixed the problem that even if SE is disabled in voice production, it will be added without permission<br>
+・In "Blitz to WoT", changed so that SE is automatically deleted when adding a .bnk file<br>
+・In "Blitz to WoT", fixed so that the color of items with voice disabled is changed<br>
+・Fixed the problem that the sound lag may occur in the music player (?)<br>
+- Fixed a problem that can not be updated normally from within the software (probably)<br>
+-Fixed the problem that the track restoration event was not played in the audio mod (sorry...)<br>
+・Other small specification changes<br>
 <br>
 V1.4.9.7<br>
-・音楽プレイヤーにて、エコーのオンオフができるチェックを追加<br>
-・WoTから移植する際、一部.bnkファイルでエラーが発生する問題を修正<br>
+・Added a check that can turn echo on and off in the music player<br>
+- Fixed an issue that caused an error in some .bnk files when porting from WoT<br>
 <br>
 V1.4.9.6<br>
-・音声Mod制作画面にて、セーブデータを保存する際サウンドも含めるオプションを追加(チェックを入れると別のPCで起動できたりサウンドを移動してもエラーがでなくなります)<br>
-・音楽プレイヤーにて、サウンドデバイスを変更した際特定の環境で再生が停止してしまう問題を修正<br>
-・音楽プレイヤーにて、左Ctrlキーを押している間-5秒,+5秒のボタンが-10秒,+10秒になるように変更<br>
+-Added an option to include sound when saving save data on the sound mod creation screen (If you check it, you can start it on another PC or move the sound, and the error will not appear)<br>
+-Fixed the problem that playback stopped in a specific environment when changing the sound device in the music player<br>
+・In the music player, while pressing the left Ctrl key, the -5 seconds and +5 seconds buttons are changed to -10 seconds and +10 seconds<br>
 <br>
 V1.4.9.5<br>
-・データのダウンロード後操作不能になる問題を修正(V1.4.9.4にて発生)<br>
+・Fixed the problem that it becomes inoperable after downloading data (Occurred in V1.4.9.4)<br>
 <br>
 V1.4.9.4<br>
-・環境によってModが正常に作成されない問題を修正<br>
-・音楽プレイヤーにて、Low(High) Pass Filterやエコーをかける機能を追加<br>
-・音楽プレイヤーにて、S+Rキーで再生速度を初期化できるように変更<br>
+・Fixed an issue where mods were not created properly depending on the environment<br>
+・Added a function to apply Low (High) Pass Filter and echo to the music player<br>
+- Changed so that the playback speed can be initialized with the S + R key on the music player<br>
 <br>
 V1.4.9.3<br>
-・ソフトウェアを64Bit化(多少動作速度に影響するかもです)<br>
-・↑に伴い、Bass Audio Libraryのバージョンを更新(ほとんどのサウンド関連で使用されているものです)<br>
-・Youtubeから取得する際の速度を向上<br>
-・音楽プレイヤーにて、サウンド編集と同様に左右キーで時間を前後かつ、SやVキー+左右キーで再生速度や音量を変更できるように<br>
-・音楽プレイヤーにて、再生速度を変更する際の音ズレを改善<br>
-・音楽プレイヤーにて、他の画面に移行し再び音楽プレイヤーを開いた際、曲が勝手に変更されてしまう場合がある問題を修正<br>
-・音楽プレイヤーにて、再生速度や音程を変更する際の遅延を軽減<br>
-・自身がソフト内で配布しているModを編集する際、パスワードのチェックボックスに関する問題を修正<br>
-・"FSBから移植"ボタンを押した際、特定の環境でクラッシュしてしまう問題を修正<br>
-・PC版WoTへ移植する際、跳弾の音声がない場合非貫通の音声が追加されるように変更(モジュール損傷も同様に)<br>
-・どのバージョンからか分かりませんが、FSBファイルの内容を正常に抽出できない場合があった問題を修正<br>
-・サーバーの容量が余っているので、"WoTB用ツールV1"からファイルをアップロードするとダウンロードリンクが生成される機能を追加(許可なくバンバンアップロードしていただいて構いません。やばくなったらストップかけるかもですが...)<br>
-・一部デザインを変更<br>
+- Convert software to 64Bit (may affect operation speed somewhat)<br>
+・According to ↑, the version of Bass Audio Library is updated (used for most sound related)<br>
+・Improved speed when retrieving from Youtube<br>
+- In the music player, you can change the playback speed and volume with the left and right keys, and the S and V keys + left and right keys, just like sound editing.<br>
+・Improved the sound lag when changing the playback speed on the music player<br>
+-Fixed an issue where the music player would change without permission when switching to another screen and opening the music player again<br>
+・Reduced delay when changing playback speed or pitch on music player<br>
+・Fixed an issue with the password checkbox when editing mods distributed within the software.<br>
+-Fixed a problem that caused a crash in a specific environment when pressing the "Port from FSB" button<br>
+・When porting to the PC version of WoT, change so that non-penetrating sound will be added if there is no ricochet sound (same for module damage)<br>
+-Fixed an issue where the contents of an FSB file could not be extracted normally, although it is unknown from which version<br>
+・Added a function to generate a download link when uploading a file from "Tool for WoTB V1" because the server has excess capacity (You can upload bang bang without permission. ...)<br>
+・Some design changes<br>
 <br>
 V1.4.9.2<br>
-・音声Modが作成できない問題を修正<br>
-・WoTB用ツールV2内の音量調整にて、サウンドが200個以上存在する場合エラーが発生する問題を修正<br>
+・Fixed an issue where voice mods could not be created<br>
+-Fixed an issue where an error occurs when there are more than 200 sounds when adjusting the volume in the WoTB tool V2<br>
 <br>
 V1.4.9<br>
-・.bnkからWwiseプロジェクトに変換する際、未対応の機能(StateやAdvanced Settingなど)を対応<br>
-・オリジナルの音声に含まれるノイズのようなSEを追加できるよう調整(プリセット編集の画面から変更できます)<br>
-・その他のサウンドModで変更できるSEや音声の種類を追加(Thanks to yurina_taki)<br>
-・一部の環境でソフトが起動しない問題を修正<br>
-・一部機能を削除<br>
-・その他一部仕様を変更、細かなバグを修正<br>
+- Supported unsupported features (State, Advanced Setting, etc.) when converting from .bnk to Wwise project<br>
+・Adjusted to add SE like noise included in the original voice (can be changed from the preset editing screen)<br>
+・Added SE and voice types that can be changed with other sound mods (Thanks to yurina_taki)<br>
+-Fixed the problem that the software does not start in some environments<br>
+・Some functions deleted<br>
+・Change some other specifications and fix minor bugs<br>
 <br>
 V1.4.8<br>
-・音声Mod作成した際、戦闘開始タイマーが正常に動作しない問題を修正(恐らくV1.4.6から発生)<br>
-・FSBからBNKへ変換する際の不具合?を少し改善<br>
-・音楽プレイヤーにて、特定の動作をするとクラッシュする問題を修正<br>
-・ボーカルと楽器を切り分ける機能にて、処理が終了しないことがある問題を修正<br>
-・その他一部仕様を変更、細かなバグを修正<br>
+・Fixed the problem that the battle start timer does not work properly when creating a voice mod (probably from V1.4.6)<br>
+・Slightly improved the problem when converting from FSB to BNK<br>
+-Fixed a problem that crashes when performing certain actions in the music player<br>
+・Fixed the problem that processing may not be completed in the function to separate vocals and instruments<br>
+・Change some other specifications and fix minor bugs<br>
 <br>
 V1.4.7<br>
-・PC版WoTの砲撃音Modを作成できる機能を追加<br>
-・ソフトの優先度を下げ、重い処理をしている間でも他の作業ができるように変更<br>
-・その他細かなバグを修正<br>
+・Added a function that allows you to create a gunshot sound mod for the PC version of WoT<br>
+- Lower the priority of the software so that you can do other work while doing heavy processing<br>
+・Fixed other minor bugs<br>
 <br>
 V1.4.6.4<br>
-・音楽プレイヤーにて、特定の操作をするとクラッシュする問題を修正<br>
-・音声制作画面でサウンドファイルをドラッグ&ドロップできるように変更<br>
-・サウンド切り分けのバグを修正<br>
+-Fixed a problem that crashes when performing certain operations in the music player<br>
+- Changed to be able to drag and drop sound files on the audio production screen<br>
+・Fixed sound separation bug<br>
 <br>
 V1.4.6<br>
-・Wwise Playerが正常に機能しない問題を修正<br>
-・音楽プレイヤーのランダム再生中、リスト内の曲が均等に再生されるよう変更<br>
-(再生済みになると文字が灰色になります。)<br>
-・音声部分と楽器部分を分ける機能で、サーバー処理でなくクライアント側で処理できる機能を追加<br>
-・SEの音源を変更できる機能を追加<br>
-・音声制作にて、ウィンドウバーを表示させるとクリアや色の変更の項目が消えてしまう問題を修正<br>
-・その他細かなバグを修正<br>
+Fixed an issue where the Wwise Player would not function properly<br>
+- Changed so that the songs in the list are played evenly during random playback of the music player<br>
+(The text turns gray when it has been played.)<br>
+・Added a function that can be processed on the client side instead of the server processing by separating the voice part and the instrument part<br>
+・Added a function to change the SE sound source<br>
+-Fixed an issue where items such as clearing and changing colors would disappear when the window bar was displayed in audio production<br>
+・Fixed other minor bugs<br>
 <br>
 V1.4.5<br>
-・ソフト内でModの動作確認ができる機能を追加 (Wwiseの機能をMod Creater内で使用できるようになりました)<br>
-・サウンド編集にて、正常にロードされない場合がある問題を修正<br>
-・.bnkの音量を変更できる機能を追加 (Thanks to Leo/AMX)<br>
-・音楽プレイヤーにて、時間が長い動画を再生しているときの音ズレを改善(V1.4.3の内容を改良)<br>
-・音声Modを作成する際、適応後にWoTBを自動で起動できるオプションを追加(Thanks to syuu__)<br>
-・その他細かなバグを修正や一部仕様を変更<br>
+・Added a function that allows you to check the operation of mods within the software (Wwise functions can now be used within Mod Creator)<br>
+・Fixed the problem that sound editing may not be loaded properly<br>
+・Added a function to change the volume of .bnk (Thanks to Leo/AMX)<br>
+・Improved the sound lag when playing long videos on the music player (Improved contents of V1.4.3)<br>
+・When creating a voice mod, added an option to automatically start WoTB after adaptation (Thanks to syuu__)<br>
+・Other minor bug fixes and some specification changes<br>
 <br>
 V1.4.4<br>
-・砲撃音を作成できる機能を追加('その他のサウンドMod'の2ページ目に含まれています)<br>
-・サーバーの仕様変更<br>
-・PCにSteam版WoTBがインストールされていなくてもModを作成できるように変更(FMOD時代の仕様が残っていました)<br>
-・細かなバグを修正 & 一部仕様を変更<br>
+・Added a function to create artillery sound (included in the second page of 'Other Sound Mod')<br>
+・Specification change of the server<br>
+- Changed to be able to create mods even if the Steam version of WoTB is not installed on the PC (the specifications of the FMOD era remained)<br>
+・Fixed minor bugs & changed some specifications<br>
 <br>
 V1.4.3<br>
-・サーバーのセキュリティを大幅に強化(第三者からの不正アクセスを防止します)<br>
-・音楽プレイヤーにて、曲のボーカルと楽器を分ける機能を追加<br>
-・タイトルバーを表示できるオプションを追加(Thanks to goddy_516)<br>
-・音楽プレイヤーにて、時間が長い動画を再生しているときに音ズレが訪れていた問題を修正<br>
-・約15秒に1回のタイミングで0.5秒ほどフリーズしていた問題を修正<br>
-・チャットを送信しても画面内のチャット欄が更新されない問題を修正<br>
+・Significantly enhanced server security (prevents unauthorized access from third parties)<br>
+-Added a function to separate the vocals and instruments of the song in the music player<br>
+・Added an option to display the title bar (Thanks to goddy_516)<br>
+-Fixed the problem that the sound lag occurred when playing a long video on the music player<br>
+・Fixed an issue where the game would freeze for about 0.5 seconds once every 15 seconds<br>
+・Fixed an issue where the chat field on the screen was not updated even after sending a chat<br>
 <br>
 V1.4.2<br>
-・音声Mod作成の際、項目に音声が入っていない場合標準のボイスを再生できるようにするオプションを追加<br>
-・被弾時の音声を作成できる機能を追加(貫通、非貫通の音声をわけることができます)<br>
-・サウンド編集のオプションを追加<br>
-・音声制作画面で、チャット時の項目を追加(Thanks to PKF_yoshi)<br>
-・サウンド編集の設定画面にて、チェックボックスのデザインを変更(見やすくなります)<br>
-・サウンド編集のショートカットキーがウィンドウが前面にない状態でも反応することがある問題を修正<br>
-・サウンド編集にて、速度と音量を変更できるショートカットキーを追加<br>
-・サウンド編集にて、10分以上のファイルを読み込むときに、波形の生成に時間がかかるため事前に用意した画像を使用するように変更<br>
-・サウンド編集にて、内容をセーブ、ロードできる機能を追加<br>
-・一部仕様の変更や細かなバグを修正<br>
+- When creating a voice mod, added an option to play the standard voice if there is no voice in the item<br>
+・Added a function that can create a sound when being hit (you can separate the sound of penetrating and non-penetrating)<br>
+・Add sound editing option<br>
+・Added chat items on the voice production screen (Thanks to PKF_yoshi)<br>
+・Changed the design of the check box on the sound editing settings screen (easier to see)
+will be)<br>
+- Fixed an issue where shortcut keys for sound editing may work even when the window is not in front<br>
+・Added shortcut keys to change speed and volume in sound editing<br>
+・Changed to use pre-prepared images when reading files longer than 10 minutes in sound editing, as it takes time to generate waveforms<br>
+・Added a function to save and load contents in sound editing<br>
+・Some specification changes and minor bug fixes<br>
 <br>
 V1.4.0<br>
-・.bnk + .pckファイルからWwiseのプロジェクトファイルを作成できる機能を追加(世界初！)<br>
-・サウンドファイル(.wav又は.mp3)を編集できる機能を追加((Thanks to PKF_yoshi))<br>
-・音声作成時や変換時など、時間を要するときに作業が完了したことをタスクバーに通知させる機能を追加(アイコンを光らせるやつです)<br>
-・ホーム画面に.wvsまたは.wmsファイルをドラッグすると自動でロードしてくれる機能を追加<br>
-    また、音楽プレイヤーに対応する拡張子のファイルをドラッグするとリストに追加されます<br>
-・ホーム画面から、変更履歴(ChangeLog)を確認できる機能を追加<br>
-・Youtubeの動画を取得するときに処理が停止してしまっていた問題を修正(音声のみの場合は問題ありませんでした)<br>
-・音楽プレイヤーにて、Youtubeの動画を取得してソフトを再起動した際リストが削除されてしまう問題を修正<br>
-・音楽プレイヤーにて、同名の曲を追加するとき、警告がでるにもかかわらずリストに追加されていた問題を修正<br>
-・処理を実行中にソフトがクラッシュした場合、確率でWindowsを再起動するまでソフトが立ち上がらなくなる問題を修正(致命的スギィ-)<br>
-・一部の.bnkファイルを解析するときにクラッシュしてしまう問題を修正<br>
-・dvpl解除とdvpl化の機能にて、フォルダを指定できるオプションを追加(Thanks to yurina_taki)<br>
-    また、変換前のファイルを変換後に削除するか指定できるようになります。<br>
-・リザルト時に音声を再生できるように変更(Thanks to yurina_taki)<br>
-・ロード|リザルトBGMの画面で、WoTBに反映される音量バーを追加(Thanks to こみやかほ)<br>
-・Youtubeから取得するときに、.mp3形式で保存されるように変更(Thanks to PKF_yoshi)<br>
-・戦闘BGMが予期せぬタイミングで再生される可能性があったためreload.bnkにBGMを入れるオプションを削除<br>
-・その他細かなバグの修正や一部仕様の変更<br>
+・Added the ability to create a Wwise project file from .bnk + .pck files (first in the world!)<br>
+・Added a function to edit sound files (.wav or .mp3) ((Thanks to PKF_yoshi))<br>
+-Added a function to notify the taskbar that the work has been completed when time is required, such as when creating audio or converting (the one that makes the icon glow)<br>
+・Added a function that automatically loads a .wvs or .wms file by dragging it to the home screen<br>
+     Also, if you drag a file with the corresponding extension to the music player, it will be added to the list<br>
+・Added a function that allows you to check the change log (ChangeLog) from the home screen<br>
+-Fixed the problem that processing stopped when retrieving Youtube videos (There was no problem when only audio was used)<br>
+-Fixed the problem that the list is deleted when the software is restarted after retrieving Youtube videos in the music player<br>
+-Fixed the problem that when adding a song with the same name in the music player, it was added to the list despite a warning<br>
+-Fixed the problem that the software does not start up until Windows is restarted with a probability if the software crashes during processing (Fatal Sugi -)<br>
+- Fixed a crash when parsing some .bnk files<br>
+・Added an option to specify a folder in the dvpl cancellation and dvpl conversion functions (Thanks to yurina_taki)<br>
+     You can also specify whether to delete the files before conversion after conversion. <br>
+・Changed to be able to play the voice at the time of the result (Thanks to yurina_taki)<br>
+・Added a volume bar that is reflected in WoTB on the Load | Result BGM screen (Thanks to Komiyakaho)<br>
+- Changed to save in .mp3 format when downloading from Youtube (Thanks to PKF_yoshi)<br>
+・Removed the option to put BGM in reload.bnk because there was a possibility that the battle BGM would be played at an unexpected timing<br>
+・Other minor bug fixes and some specification changes<br>
 <br>
 V1.3.9<br>
-・チャットのレイアウトを変更(少しは見やすくなったかな？)<br>
-・音楽プレイヤーで、リストを変更できる機能を追加(Shift+1～9のキーを押すと、リストが切り替わります。終了した地点のリストが起動時に開かれます。)<br>
-また、終了地点のリストが空かつ1番目のリストが空でない場合は1番目のリストが選択されます。<br>
-・ログインまたはアカウント登録時にショートカットキーと被って一部の大文字のローマ字が打てなかった問題を修正<br>
-・一部のbnkファイルが正常に解析されなかった問題を修正(ActorMixerが取得できていませんでした)<br>
-・その他細かなバグを修正<br>
+・ Changed the layout of the chat (Is it easier to see?)<br>
+-Added a function to change the list in the music player (Press Shift + 1 to 9 to switch the list. The list of the end point will be opened at startup.)<br>
+Also, if the list of end points is empty and the first list is not empty, the first list is selected. <br>
+-Fixed an issue where some uppercase romaji could not be typed due to overlapping shortcut keys when logging in or registering an account<br>
+- Fixed an issue where some bnk files were not parsed correctly (ActorMixer could not be acquired)<br>
+・Fixed other minor bugs<br>
 <br>
 V1.3.8<br>
-・上級者向けに、イベントIDごとにファイルを抽出できる機能を追加(ホーム画面でShift + Eキーを押すと画面が表示されます)<br>
-・解析できないbnkファイルがあった問題を修正<br>
-・WoTから変換する際、audio_mods.xmlを指定できる機能を追加(これで、イベント名が変更されていた場合でも反映されるようになります)<br>
-・音楽プレイヤーにて、バックグラウンド再生のチェックを切った状態で画面を閉じると曲が再生されたままになる問題を修正<br>
-・Youtubeの仕様変更により動画が取得できなかった問題を修正<br>
-・音楽プレイヤーにて、ランダム再生時でも再生時間を指定してその間をループできるように変更<br>
-・その他細かなバグの修正や仕様の変更<br>
+・For advanced users, added a function that can extract files by event ID (Press Shift + E on the home screen to display the screen)<br>
+- Fixed an issue where some bnk files could not be parsed<br>
+・Added a function that allows you to specify audio_mods.xml when converting from WoT (this will reflect even if the event name has been changed)<br>
+-Fixed the problem that the song continues to play when closing the screen with the background playback check off in the music player<br>
+-Fixed an issue where videos could not be acquired due to changes in Youtube specifications<br>
+- In the music player, change so that you can specify the playback time even during random playback and loop it during that time<br>
+・Other minor bug fixes and specification changes<br>
 <br>
 V1.3.7<br>
-・リザルト時、優勢時のBGMModを作成できるように変更<br>
-・"ロード|リザルトBGM"画面の左側のリストにて、CtrlまたはShiftキーを押しながらクリックすると複数選択できるように変更(選択した項目をすべてビルドできるようになります)<br>
-・音楽プレイヤーの画面で、Shift + Dキーを押すと追加されている曲をクリアするダイアログを表示させるように<br>
-・"音量を均一にする"にチェックを入れてビルドすると音声が反映されない問題を修正<br>
-・一部のbnkファイルが読み込めない問題を修正(完全ではないかもしれません。)<br>
-・一部の環境にて、戦闘BGMが反映されなかった問題を修正<br>
-・その他細かなバグの修正や一部仕様の変更<br>
+・Changed to be able to create BGMMod at the time of result and superiority<br>
+・Changed so that multiple selections can be made by clicking while holding down the Ctrl or Shift key in the list on the left side of the "Load | Result BGM" screen (all selected items can be built)<br>
+- On the music player screen, press Shift + D to display a dialog to clear the added songs<br>
+-Fixed the problem that the sound is not reflected when building with "Equal volume" checked<br>
+- Fixed the problem that some bnk files cannot be read (may not be complete)<br>
+・Fixed an issue where battle BGM was not reflected in some environments<br>
+・Other minor bug fixes and some specification changes<br>
 <br>
 V1.3.6<br>
-・ソフト内で戦闘開始前のロードBGMModを作成できる機能を追加<br>
-・ソフト内でアカウント登録またはログインをしないと各機能を利用できないように仕様を変更<br>
-(利用人数を把握したいため、ご協力ください。ユーザー名とパスワードはお好みで指定していただいて構いません。)<br>
-・その他一部仕様を変更、細かなバグを修正<br>
+・Added a function that allows you to create a load BGMMod before the battle starts within the software<br>
+-Changed specifications so that each function cannot be used without registering an account or logging in within the software<br>
+(We would like to know the number of users, so please cooperate. You can specify the user name and password as you like.)<br>
+・Change some other specifications and fix minor bugs<br>
 <br>
 V1.3.5<br>
-・FSBまたはBNKファイルからこのソフト専用のセーブファイルを作成できる機能を追加<br>
-(これで既存のModを改造できるようになりますが、作者以外の配布はしないでください。)<br>
-・音楽プレイヤーにて、停止している状態から別の曲に移行すると音量や速度が変更できなくなる問題を修正<br>
-・BlitzからWoTに変換した際、WoTへのインストール先が正しく取得できていなかった問題を修正<br>
-・その他細かなバグの修正や仕様の変更<br>
+・Added a function that can create a save file dedicated to this software from an FSB or BNK file<br>
+(This will allow you to modify existing mods, but please do not distribute it to anyone other than the author.)<br>
+-Fixed an issue where the music player could not change the volume or speed when switching to another song from the stopped state<br>
+-Fixed an issue where the installation destination to WoT was not correctly acquired when converting from Blitz to WoT<br>
+・Other minor bug fixes and specification changes<br>
 <br>
 V1.3.4<br>
-・戦闘BGMをreload.bnkに含めるように変更　これにより、戦闘に入り遅れた場合リロード完了時にBGMが再生されるようになります(重複はしません)<br>
-また、時間内に戦闘に入れた場合はリロード完了を待たなくても再生されます。<br>
-・SHift+Pキーで一時フォルダの場所を確認できるように変更<br>
-・細かなバグを修正<br>
+・Changed to include battle BGM in reload.bnk　This will allow the BGM to be played when reloading is completed if the battle is delayed (no duplication)<br>
+Also, if you enter the battle within the time, it will be played without waiting for the reload to complete. <br>
+-Changed to be able to check the location of the temporary folder with Shift + P key<br>
+・Fixed minor bugs<br>
 <br>
 V1.3.3<br>
-・"WoTから移植"にて、指定した音声の移植を無効化できる機能を追加<br>
-・WoTBからWoTに移植する際、PCにWoTがインストールされていたら自動で導入するか確認するメッセージを追加<br>
-・音声制作ツール&SEの設定画面にて、再生デバイスが正常に反映されていない問題を修正<br>
-・音声制作ツールにて、選択したのに色が変わらない場合がある問題を修正<br>
+・Added a function that allows you to disable the porting of specified voices in "Porting from WoT"<br>
+- When porting from WoTB to WoT, add a message to confirm whether to automatically install WoT if it is installed on the PC<br>
+・Fixed an issue where the playback device was not properly reflected on the voice production tool & SE settings screen<br>
+-Fixed the problem that the color may not change even if selected in the voice production tool<br>
 <br>
 V1.3.2<br>
-・WoTBからPC版WoTに音声Modを移植できる機能を追加<br>
-・"WoTから移植"画面にて、無効なファイルを選択した際、操作不能になる問題を修正<br>
-・SEの有無を設定する画面にて、SEを選択し再生する際メモリ使用率が徐々に増える問題を修正<br>
-・WAVに変換する際の速度と安定性を向上<br>
-・その他細かなバグを修正<br>
+・Added a function that allows you to port voice mods from WoTB to the PC version of WoT<br>
+-Fixed an issue that caused inoperability when selecting an invalid file on the "Port from WoT" screen<br>
+-Fixed an issue where the memory usage rate gradually increased when selecting and playing SE on the screen for setting the presence or absence of SE<br>
+- Improved speed and stability when converting to WAV<br>
+・Fixed other minor bugs<br>
 <br>
 V1.3.1<br>
-・PC版WoTから移植できる.bnkファイルを追加<br>
-・PC版WoTから移植する画面にて、.bnkファイルを選択していない状態でクリアボタンを押すとクラッシュする問題を修正<br>
-・音楽プレイヤーにて、指定した時間内をループできる機能を追加<br>
-Shift+Sキーで再生開始位置を指定　Shift+Eキーで再生終了位置を指定 Shift+Cで時間指定を解除<br>
-・不要なコードを削除<br>
+・Added a .bnk file that can be ported from the PC version of WoT<br>
+-Fixed an issue that caused a crash when pressing the clear button while no .bnk file was selected on the porting screen from the PC version of WoT<br>
+-Added a function that allows you to loop within a specified time on the music player<br>
+Specify the playback start position with Shift + S key Specify the playback end position with Shift + E key Cancel time specification with Shift + C<br>
+・Unnecessary code deleted<br>
 <br>
-V1.3.0変更点<br>
-・PC版WoTの音声をWoTB用に変換する機能を追加(めっちゃ大変でした...)<br>
-・WwiseでSEを無効化できるように変更<br>
-・.bnkファイルを音楽プレイヤーで指定したデバイスで再生するように変更<br>
-・音声制作ツールで、特定の操作をするとクラッシュする問題を修正<br>
-・音量調整機能にて、ファイル数が多いと機能しなくなる問題を修正<br>
-・FSB変換ツールで、既に選択されている状態からFSBファイルを再び選択するとクラッシュする問題を修正<br>
-・一部仕様を変更<br>
-・その他軽度なバグを修正<br>
+Changes in V1.3.0<br>
+・Added a function to convert the voice of the PC version of WoT to WoTB (it was really hard...)<br>
+・Changed to be able to disable SE in Wwise<br>
+- Changed to play .bnk files on the device specified in the music player<br>
+-Fixed an issue that caused a crash when performing certain operations in the audio production tool<br>
+-Fixed the problem that the volume adjustment function does not work when the number of files is large<br>
+-Fixed a crash problem when reselecting an FSB file from the already selected state in the FSB conversion tool<br>
+・Some specifications changed<br>
+・Fixed other minor bugs<br>
 <br>
-V1.2.9～V1.2.9.9変更点<br>
-・ソフトのアップデートなしで対応するFSBの数を増加できるように変更<br>
-・実行ファイルを軽量化し、アップデートにかかる時間を大幅に削減<br>
-・公開したModを編集するとき、BGMModにチェックを入れると公開できない問題を修正(Thanks to yurina_taki)<br>
-・Wwiseのプロジェクトファイルをダウンロードする際、進捗を確認できるように変更<br>
-・音楽プレイヤーにて、音程と速度を同期させるオプションを追加<br>
-・Mod配布画面にて、再生するサウンドデバイスを、音楽プレイヤーで指定したデバイスで再生するように変更<br>
-・音声制作画面にて、音声を追加すると左のリストが未選択になり、その状態で音声を再生しようとするとクラッシュする問題を修正(V1.2.9.7から発生)<br>
-・音楽プレイヤーで再生しながら音声制作画面に行くと曲と音声の音量が同期されてしまう問題を修正<br>
-・その他軽度なバグを修正<br>
-・要望により、音声Mod作成画面にてファイルが選択されていない項目の色を変更してわかりやすくするオプションを追加<br>
-・"Wwiseに移植"にて、サポートするFSBの数を増加(中身のファイル名が概ね合っていれば認識するように変更)<br>
-・"Wwiseに移植"にて、dvpl化とWoTBに適応するかのオプションを追加<br>
-・Shift + Fキーで画面サイズを変更できるように(フルスクリーン・ウィンドウサイズ)<br>
-※ウィンドウサイズの場合はマウスをドラッグすることで位置を変更できます。<br>
-・音楽プレイヤーにて、動画位置を変更したあとクリックを離しても位置が変更され続ける場合がある問題を修正<br>
-・ファイル容量が大きいとdvpl化できなくなる問題を修正(Thanks to yurina_taki!!!)<br>
+Changes from V1.2.9 to V1.2.9.9<br>
+・Changed to be able to increase the number of supported FSBs without software update<br>
+・Reduce the weight of the executable file and significantly reduce the time required for updating<br>
+・Fixed an issue where you can't publish if you check BGMMod when editing a published Mod (Thanks to yurina_taki)<br>
+- Changed to be able to check progress when downloading Wwise project files<br>
+-Added an option to synchronize the pitch and speed in the music player<br>
+・On the mod distribution screen, change the sound device to be played to the device specified in the music player<br>
+-Fixed the problem that the list on the left becomes unselected when adding audio on the audio production screen, and crashes when trying to play audio in that state (occurred from V1.2.9.7)<br>
+-Fixed an issue where the volume of the song and voice would be synchronized when going to the voice production screen while playing on the music player<br>
+・Fixed other minor bugs<br>
+- By request, added an option to change the color of items where no file is selected on the voice mod creation screen to make it easier to understand<br>
+・Increase the number of supported FSBs in "Port to Wwise" (changed to recognize if the contents file name is roughly the same)<br>
+・Added option to adapt to dvpl and WoTB in "Port to Wwise"<br>
+・You can change the screen size with Shift + F key (full screen window size)<br>
+*In the case of window size, you can change the position by dragging the mouse. <br>
+-Fixed an issue in the music player where the position of the video may continue to change even after the click is released after changing the video position<br>
+・Fixed a problem that can not be converted to dvpl if the file size is large (Thanks to yurina_taki!!!)<br>
 <br>
-V1.2.9変更点<br>
-・新サウンドエンジンに対応<br>
-・↑に伴い、音声ファイルを.wemに変換->.bnkに適応を自動で行う機能を追加<br>
-ただし、上級者向けの画面では音声の差し替えがメインなので音声の追加はできません。<br>
-・FmodのFSBファイルをWwiseのBNKファイルに移植してくれる機能を追加(制限あり)<br>
-・.bnkファイルの内容を抽出する機能を追加<br>
-・.bnkファイル内のサウンドを再生できる機能を追加(ファイルに展開して再生するため時間がかかる場合があります)<br>
-・"Mod配布"の仕様を新サウンドエンジン用に変更(依存のModは非公開になっています。対応でき次第追加します)<br>
-↑の画面内にある復元機能も更新していますので正常に実行されます。<br>
-・BGM作成の仕様も新サウンドエンジン用に変更<br>
-・.wavファイルに変換するとき、マルチスレッドで動作するように変更(処理速度大幅UP↑↑↑CPU使用率100%いくけど許してください。)<br>
-・音声作成画面の操作にて、選択したファイルを取り消すときに別のファイルが取り消されていた問題を修正<br>
-・音楽プレイヤーにて、波形を表示できる機能を追加<br>
-・その他軽度なバグを修正<br>
-・一部仕様を変更<br>
+Changes in V1.2.9<br>
+・Compatible with the new sound engine<br>
+・With ↑, added a function to automatically convert audio files to .wem -> adapt to .bnk<br>
+However, on the screen for advanced users, voice replacement is the main task, so voice cannot be added. <br>
+-Added a function to port Fmod FSB files to Wwise BNK files (limited)<br>
+・Added a function to extract the contents of .bnk files<br>
+-Added a function that can play sounds in .bnk files (it may take time to expand to files and play)<br>
+・Mod distribution specification changed for new sound engine
+Since the restoration function in the screen of ↑ is also updated, it will be executed normally. <br>
+・Specifications for creating BGM have also been changed for the new sound engine<br>
+・When converting to a .wav file, multi-thread
+Changed to work (Processing speed significantly increased ↑↑↑ CPU usage rate goes to 100%, but please forgive me.)<br>
+-Fixed the problem that another file was canceled when canceling the selected file in the operation of the voice creation screen<br>
+・Added a function to display waveforms in the music player<br>
+・Fixed other minor bugs<br>
+・Some specifications changed<br>
 <br>
-V1.2.8変更点<br>
-・FSBファイルを抽出できる機能を追加(.aac .flac .mp3 .ogg .wav .webm .wma形式に対応)<br>
-・FSBファイル専用の再生プレイヤーを追加<br>
-↑はともにWoTB用ツール内のFSB変換ツールに入っています。<br>
-・DDSをPNGに、PNGをDDSにエンコードできる機能を追加(WoTB用ツールに入っています。)<br>
-.dds(BC1～BC7まで対応) .png .jpg .bmp .gif .tiff .exifを相互変換できます。(WoTBのddsはBC3形式です。)<br>
-↑はWoTB用ツール内の画像変換ツールに入っています。<br>
-・FSBファイルから抽出してできたファイルをFSB形式に戻す機能を追加<br>
-↑はWoTB用ツール内のFSB作成ツールに入っています。(FSBから抽出すると.wfsファイルが生成されるのでそれを指定します。)<br>
-・音楽プレイヤー、Mod配布画面にてリストの順番を変更できるように<br>
-(音楽プレイヤーでは名前順、拡張子順 / Mod配布画面では名前順、配布順)<br>
-・チェックボックスのチェックの有無や音量を保存し起動時に適応されるように変更<br>
-・Youtubeのタイトルにファイル名として保存できない文字がある場合、正常に保存されない不具合を修正<br>
-・ログをクリアできるように変更(ホーム画面でShift+Lキーを押すとダイアログが表示されます。)<br>
-・一部の環境でAndroid用の音声Modが作成されない問題を修正<br>
-・すべての環境でWoTBのDVPLを解除できない問題を修正<br>
-・.dllの位置を変更(dllフォルダに移動)<br>
-・軽度なバグを修正<br>
-・一部仕様を変更<br>
+Changes in V1.2.8<br>
+・Added a function that can extract FSB files (supports .aac .flac .mp3 .ogg .wav .webm .wma format)<br>
+・Added player for FSB files<br>
+Both ↑ are in the FSB conversion tool in the WoTB tool. <br>
+・Added a function that can encode DDS to PNG and PNG to DDS (included in the WoTB tool)<br>
+.dds (supports BC1 to BC7) .png .jpg .bmp .gif .tiff .exif can be mutually converted. (WoTB's dds is in BC3 format.)<br>
+↑ is in the image conversion tool in the tool for WoTB. <br>
+・Added a function to convert files extracted from FSB files back to FSB format<br>
+↑ is in the FSB creation tool in the WoTB tool. (Extracting from FSB generates a .wfs file, so specify it.)<br>
+・You can change the order of the list on the music player and mod distribution screen<br>
+(Music player in name order, extension order / Mod distribution screen in name order, distribution order)<br>
+・Changed to save the check box check and volume and apply it at startup<br>
+-Fixed a bug where the Youtube title could not be saved properly if there were characters that could not be saved as a file name<br>
+- Changed to be able to clear the log (Press Shift + L key on the home screen to display the dialog.)<br>
+-Fixed an issue where voice mods for Android were not created in some environments<br>
+-Fixed an issue where the WoTB DVPL could not be unlocked in all environments<br>
+・Change the location of .dll (move to dll folder)<br>
+・Fix minor bugs<br>
+・Some specifications changed<br>
 <br>
-V1.2.7変更点<br>
-・WoTB用ツールにてFEVファイルを再生できる機能を追加(対応するFSBファイルがないと動作しません。)<br>
-・音楽プレイヤーにてYoutubeから取得できる機能を追加(音声か動画か選択できます。)<br>
-・音声Mod作成時音声が見つからない場合クラッシュする問題を修正<br>
-・エラーが発生した場合Error_Log.txtに内容を出力するように変更(ログをもとに修正します。)<br>
-・その他軽度なバグを修正<br>
+Changes in V1.2.7<br>
+-Added a function to play FEV files with WoTB tools (does not work if there is no corresponding FSB file)<br>
+-Added a function that can be obtained from Youtube in the music player (you can select audio or video.)<br>
+・Fixed a crash problem when creating a voice mod when no voice was found<br>
+・Changed to output contents to Error_Log.txt when an error occurs (correction based on the log)<br>
+・Fixed other minor bugs<br>
 <br>
-V1.2.6変更点<br>
-・Android対応のfsbファイルを作成できる機能を追加("Android用"にチェックを入れる必要があります。)<br>
-・Android用のModにSEを追加できるように<br>
-・アップデートやModのダウンロードの進捗状況を確認できる機能を追加<br>
-・チャットを開いたとき自動で一番下までスクロールするように変更<br>
-・音声Modを作成できない可能性がある問題を修正<br>
-・一部の環境にて音声の音量が変更されない問題を修正<br>
-・音楽プレイヤーにて出力デバイスのバグを修正<br>
-。音楽プレイヤーでファイルが見つからない場合クラッシュする問題を修正<br>
-・一部デザインを変更<br>
-・Fmod_Android_Create.exeの仕様を変更<br>
-・その他細かなバグの修正や仕様の変更<br>
+Changes in V1.2.6<br>
+・Added a function that can create fsb files for Android ("For Android" must be checked.)<br>
+・Add SE to Android mods<br>
+-Added a function that allows you to check the progress of downloading updates and mods<br>
+・Changed to automatically scroll to the bottom when chat is opened<br>
+・Fixed an issue where voice mods could not be created<br>
+-Fixed an issue where the audio volume was not changed in some environments<br>
+- Fixed a bug in the output device in the music player<br>
+. Fixed a crash when files were not found in the music player<br>
+・Some design changes<br>
+・Change the specification of Fmod_Android_Create.exe<br>
+・Other minor bug fixes and specification changes<br>
 <br>
-V1.2.5変更点<br>
-・配布されている音声Modのsounds.yamlがdvpl化されていなかった場合正しくインストールできない問題を修正(Thanks to meniya)<br>
-・Android用にFSB単体を作成できるソフトを追加(一時フォルダのFmod_Android_Createにあります。)<br>
-↑の使用方法はGithubのFmod_Android_Createを参照してください。<br>
-・細かなバグを修正<br>
-・一部仕様を変更<br>
+Changes in V1.2.5<br>
+-Fixed the problem that it could not be installed correctly if the distributed sound mod's sounds.yaml was not converted to dvpl (Thanks to meniya)<br>
+・Added software that can create a single FSB for Android (located in the temporary folder Fmod_Android_Create)<br>
+Refer to Fmod_Android_Create on Github for how to use ↑. <br>
+・Fixed minor bugs<br>
+・Some specifications changed<br>
 <br>
-V1.2.4変更点<br>
-・音楽プレイヤーで出力デバイスを指定できるように操作を追加<br>
-・一時フォルダの位置を変更していた場合音声をロード、セーブ、作成ができなかった問題を修正<br>
-・その他軽度なバグを修正<br>
-・一部仕様を変更<br>
+Changes in V1.2.4<br>
+・Added an operation so that you can specify the output device in the music player<br>
+-Fixed an issue where audio could not be loaded, saved, or created if the location of the temporary folder was changed<br>
+・Fixed other minor bugs<br>
+・Some specifications changed<br>
 <br>
-V1.2.3変更点<br>
-・ソフト内で作成したBGMModがDVPL化されていた場合BGMModとして公開できなかった問題を修正<br>
-・Mod配布者自身が公開したModは編集できるように変更(削除、ファイル追加など)<br>
+Changes in V1.2.3<br>
+・Fixed the problem that BGMMod created in the software could not be published as BGMMod if it was converted to DVPL<br>
+・ Mods published by mod distributors can be edited (delete, add files, etc.)<br>
 <br>
-V1.2.2変更点<br>
-・一部の環境で音声が作成されない問題を修正(Thanks to Yurina_Taki!!!)<br>
-・パスに日本語が含まれている場合dvplを解除できない問題を修正<br>
-・このソフトのアンインストールをソフト内でできるように(ホーム画面でShift + Escキーを押すとメッセージが出ます)<br>
-・一時ファイル(キャッシュファイルを含む)のフォルダ場所を指定できるように変更(ホーム画面でShift + Dキーを押すとメッセージが出ます)<br>
-・いるかわかりませんが、音楽プレイヤーでバックグラウンド再生できるように変更<br>
-・謎のチャット機能を解放(V1.0から既に存在していましたが細かい調整のため非公開でした)<br>
-・細かな調整<br>
+Changes in V1.2.2<br>
+・Fixed the problem that voice is not created in some environments (Thanks to Yurina_Taki!!!)<br>
+・Fixed an issue where dvpl cannot be unlocked if Japanese is included in the path<br>
+- You can now uninstall this software within the software (Press Shift + Esc on the home screen to display a message)<br>
+- Changed to be able to specify the folder location of temporary files (including cache files) (Press Shift + D on the home screen to display a message)<br>
+・ I don't know if there is, but I changed it so that it can be played in the background with a music player<br>
+・Releasing a mysterious chat function (Already existed from V1.0, but it was closed for fine adjustment)<br>
+・Fine adjustment<br>
 <br>
-V1.2.1変更点<br>
-・軽度なバグを修正<br>
-・一部仕様を変更<br>
-・不必要なライブラリを削除<br>
+Changes in V1.2.1<br>
+・Fix minor bugs<br>
+・Some specifications changed<br>
+- Delete unnecessary libraries<br>
 <br>
-V1.2変更点<br>
-・致命的なバグを修正<br>
-(戦闘中にクラッシュ、FEV+FSBファイルが作成されない場合があるなどを修正)<br>
-・アップデートをソフト内でできるように(サーバーに接続&ログインする必要あり)<br>
+Changes in V1.2<br>
+・Fixed fatal bugs<br>
+(Fixed crashes during battle, FEV + FSB files may not be created, etc.)<br>
+- Updates can be done within the software (need to connect and log in to the server)<br>
 <br>
-V1.1変更点<br>
-・WoTBのインストール場所がSteamのインストール場所と同じだった場合フォルダを取得できない問題を修正(Thanks to yurina_taki)<br>
-・サーバー機能を一部開放し、ログインすればだれでもModの配布、ダウンロードを行うことができるように<br>
-・サーバー容量は1TBです。不必要なファイルのアップロードはおやめください。<br>
+Changes in V1.1<br>
+-Fixed the problem that the folder cannot be obtained if the WoTB installation location is the same as the Steam installation location (Thanks to yurina_taki)<br>
+・Partially opened the server function so that anyone can distribute and download mods by logging in<br>
+・The server capacity is 1TB. Please do not upload unnecessary files. <br>
 <br>
 ---using Library---<br>
 BASS.ASIO.1.3.1.2<br>
@@ -379,7 +381,7 @@ Crc32.NET.1.2.0<br>
 System.Buffers.4.5.1<br>
 System.Memory.4.5.4<br>
 System.Runtime.CompilerServices.Unsafe.5.0.0<br>
-Cauldron.FMOD(V1.1から導入)<br>
-YoutubeExplode(V1.2.7から導入)<br>
-DdsFileTypePlusIO(V1.2.8から導入)<br>
-BetterFolderBrowser(V1.2.8から導入)
+Cauldron.FMOD (introduced from V1.1)<br>
+YoutubeExplode (introduced from V1.2.7)<br>
+DdsFileTypePlusIO (introduced from V1.2.8)<br>
+BetterFolderBrowser (introduced from V1.2.8)
